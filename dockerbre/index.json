@@ -30,7 +30,8 @@
       {
         "file": "Dockerfile",
         "target": "/home/scrapbook/tutorial"
-      }
+      },
+     "host01": [ {"file": "Dockerfile", "target": "/root"} ] 
     ]
   },
   "environment": {
