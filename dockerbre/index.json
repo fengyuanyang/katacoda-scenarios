@@ -25,6 +25,20 @@
       "text": "finish.md"
     }
   },
+  "assets": {
+    // "client": [
+    //   {
+    //     "file": "docker-compose.yml",
+    //     "target": "~/"
+    //   }
+    // ],
+    "host01": [
+      {
+        "file": "*",
+        "target": "~/"
+      }
+    ]
+  },
   "environment": {
     "uilayout": "editor-terminal"
   },
