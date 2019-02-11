@@ -26,6 +26,12 @@
     }
   },
   "assets": {
+    "client": [
+      {
+        "file": "*",
+        "target": "~/"
+      }
+    ],
     "host01": [
       {
         "file": "*",
