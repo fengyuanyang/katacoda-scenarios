@@ -23,16 +23,16 @@
     },
     "finish": {
       "text": "finish.md"
-    }
-  },
-  "assets": {
-    "client": [
-      {
-        "file": "Dockerfile",
-        "target": "/home/scrapbook/tutorial"
-      },
-     "host01": [ {"file": "Dockerfile", "target": "/root"} ] 
-    ]
+    },
+   "assets": {
+	    "client": [
+	      {
+	        "file": "Dockerfile",
+	        "target": "/home/scrapbook/tutorial"
+	      },
+	     "host01": [ {"file": "Dockerfile", "target": "/root"} ] 
+	    ]
+	  	},
   },
   "environment": {
     "uilayout": "editor-terminal"
