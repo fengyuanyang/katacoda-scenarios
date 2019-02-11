@@ -28,8 +28,8 @@
   "assets": {
     "client": [
       {
-        "file": "*",
-        "target": "/home/scrapbook/"
+        "file": "Dockerfile",
+        "target": "/home/scrapbook/tutorial"
       }
     ]
   },
