@@ -2,7 +2,7 @@
   "title": "docker bre",
   "description": "create bre container and run tomcat",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "3 minutes",
   "details": {
     "steps": [
       {
@@ -30,9 +30,9 @@
 	        "file": "Dockerfile",
 	        "target": "/home/scrapbook/tutorial"
 	      },
-	     "host01": [ {"file": "Dockerfile", "target": "/root"} ] 
+	     "host01": [ {"file": "*", "target": "/root"} ] 
 	    ]
-	  	},
+	  }
   },
   "environment": {
     "uilayout": "editor-terminal"
