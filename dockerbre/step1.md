@@ -1,15 +1,14 @@
-First step.
+## Build Image from Dockerfile
 
-## Task
-
-Build image from Dockerfile
 Image will be pulled from docker registry.
+For more information about the parent image
+refer [jdk6-mvn3](https://hub.docker.com/r/fengyuanyang/jdk6-mvn3/dockerfile)
 This image includes
 1. JDK 1.6
 2. MAVEN 3.2.5
 3. TOMCAT 7
 
-Build docker image via **commend** below
+Build docker image via **command** below
 
 `docker build -t bre .`{{execute}}
 
@@ -21,4 +20,4 @@ Result should be like it
 
 | REPOSITORY | IMAGE ID     | CREATED        | SIZE  |
 |------------|--------------|----------------|-------|
-| bre        | 79bda7d73bae | 21 seconds ago | 823MB |
+| bre        | XXXXXXXXXXXX | 21 seconds ago | 823MB |
