@@ -1,8 +1,11 @@
 ## Build Image from Dockerfile
 
 Image will be pulled from docker registry.
+
 For more information about the parent image
+
 refer [jdk6-mvn3](https://hub.docker.com/r/fengyuanyang/jdk6-mvn3/dockerfile)
+
 This image includes
 1. JDK 1.6
 2. MAVEN 3.2.5
