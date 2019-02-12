@@ -34,7 +34,8 @@
 	  }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "dashboards": [{"name": "Tomcat", "port": 8090}],
   },
   "backend": {
     "imageid": "docker"

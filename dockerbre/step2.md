@@ -1,5 +1,5 @@
 ## Start HTTP Server
-`docker run -p 80:8090 -it bre -d /opt/tomcat/bin/startup.sh`{{execute}}
+`docker run -p 8090:8090 -it bre -d bash /opt/tomcat/bin/startup.sh`{{execute}}
 
 ## Test
 `curl localhost`{{execute}}
