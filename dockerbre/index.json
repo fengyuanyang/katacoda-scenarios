@@ -36,7 +36,7 @@
   "environment": {
     "uilayout": "editor-terminal",
     "showdashboard": true,
-    "dashboards": [{"name": "Tomcat", "port": 8090}]
+    "dashboards": [{"name": "Tomcat", "port": 8080}]
   },
   "backend": {
     "imageid": "docker"
