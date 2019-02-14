@@ -25,7 +25,7 @@ spec:
         image: bre
         imagePullPolicy: Never
         command: ["bash"]
-        args: ["/root/startwithwars.sh"]
+        args: ["/prepare/startwithwars.sh"]
         # resources:
         #   limits:
         #     memory: 3072Mi
@@ -34,22 +34,22 @@ spec:
         ports:
         - containerPort: 8090
 
-        #volumeMounts:
+        volumeMounts:
         #- name: shared-wars
         #  mountPath: /wars
-        #- name: bre-prepare
-        #  mountPath: /prepare
+        - name: bre-prepare
+          mountPath: /prepare
         #- name: shared-work
         #  mountPath: /BRE/axn/work
         #- name: shared-config
         #  mountPath: /BRE/axn/work/config
  
       # Volumes
-      #volumes:
-      #- name: bre-prepare
-      #  hostPath:
-      #    path: $(PATH of prepare)
-      #    type: Directory
+      volumes:
+      - name: bre-prepare
+        hostPath:
+          path: /root/
+          type: Directory
       #- name: shared-wars
       #  hostPath:
       #    path: $(PATH of wars)
