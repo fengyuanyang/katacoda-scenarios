@@ -22,19 +22,13 @@
     },
    "assets": {
 	    "client": [
-	      {
-	        "file": "Dockerfile",
-	        "target": "/root"
-	      },
-	     {
-                "file": "deployment.yml",
-                "target": "/root"
-              },
-	       {
-                "file": "service.yml",
-                "target": "/root"
-              }
-	    ]
+	      {"file": "Dockerfile", "target": "/root"},
+	      {"file": "deployment.yml", "target": "/root"},
+        {"file": "service.yml", "target": "/root"}
+	    ],
+      "host01": [ {"file": "Dockerfile", "target": "/root"},
+                  {"file": "deployment.yml", "target": "/root"},
+                  {"file": "service.yml", "target": "/root"},] 
 	  }
   },
   "environment": {
