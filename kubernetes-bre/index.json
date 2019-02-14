@@ -1,6 +1,6 @@
 {
-  "title": "docker bre",
-  "description": "create bre container and run tomcat",
+  "title": "bre on kubernetes",
+  "description": "deliver bre to kubernetes",
   "difficulty": "beginner",
   "time": "3 minutes",
   "details": {
@@ -24,15 +24,15 @@
 	    "client": [
 	      {
 	        "file": "Dockerfile",
-	        "target": "/home/scrapbook/tutorial"
+	        "target": "/root"
 	      },
 	     {
                 "file": "deployment.yml",
-                "target": "/home/scrapbook/tutorial"
+                "target": "/root"
               },
 	       {
                 "file": "service.yml",
-                "target": "/home/scrapbook/tutorial"
+                "target": "/root"
               }
 	    ]
 	  }
