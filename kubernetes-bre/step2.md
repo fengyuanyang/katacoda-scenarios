@@ -1,10 +1,10 @@
-## Run container and enter
-`docker run -p 8080:8080 -it bre bash`{{execute}}
+## Deploy Dashboard for kubernetes
+`kubectl apply -f kubernetes-dashboard.yaml`{{execute}}
 
-## Run tomcat on port 8080
-`bash /opt/tomcat/bin/startup.sh`{{execute}}
+## To access Dashboard, you must create a secure channel to your Kubernetes cluster. Run the following command
+`kubectl proxy --address='0.0.0.0' --port=8001 --accept-hosts='^*$' &`{{execute}}
 
-## Reach tomcat from browser
-https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com
+## Access Dashboard after deploying
+https://[[HOST_SUBDOMAIN]]-8001-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default
 
 
