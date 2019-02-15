@@ -44,6 +44,7 @@ kubernetes   ClusterIP   10.96.0.1      <none>        443/TCP          7m
 `
 
 #### Access Application after deploying Service
-https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/
+[Access Application](https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/)
+
 
 
