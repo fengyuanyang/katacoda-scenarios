@@ -3,7 +3,7 @@
 
 This command will create a pod, one container built from image 'bre' will be used and run on that pod
 
-#### Create a service with port on 8080 to access Application , which is the port tomcat start at (container)
+#### Create a service on 8080 port to access Application , which is the port tomcat start at (container)
 
 selector `app: bre` is used in Service, which select pods with labels match `app: bre`
 
