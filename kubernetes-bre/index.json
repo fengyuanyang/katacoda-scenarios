@@ -37,6 +37,10 @@
         {
           "file": "startwithwars.sh",
           "target": "/root"
+        },
+        {
+          "file": "kubernetes-dashboard.yaml",
+          "target": "/root"
         }
       ]
     }
