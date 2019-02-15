@@ -1,4 +1,5 @@
 ## You have completed this session.
-### build image, run container and tomcat
+### build image, deploy applications and service on kubernetes
 
-Now, you are able to build image on your computer, go ahead!
+Congratulations!
+Now, you are able to deploy your own applications! Go ahead

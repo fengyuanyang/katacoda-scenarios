@@ -3,8 +3,9 @@
 
 This command will create a pod, one container built from image 'bre' will be used and run on that pod
 
-#### To access Application, must create a service with port on 8080, which is the port tomcat start at (container)
-#### selector `app: bre` is used in Service, which select pods with labels match `app: bre`
+#### Create a service with port on 8080 to access Application , which is the port tomcat start at (container)
+
+selector `app: bre` is used in Service, which select pods with labels match `app: bre`
 
 	# deployment.yml
 	...
@@ -31,6 +32,7 @@ bre       1         1         1            1           5m
 NAME                   READY     STATUS    RESTARTS   AGE
 bre-687989f5bc-5btrt   1/1       Running   0          2m
 `
+
 Repeat if the STATUS not shows `Running`
 
 #### Check services status
