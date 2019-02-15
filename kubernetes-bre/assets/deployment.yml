@@ -32,7 +32,8 @@ spec:
         #   requests:
         #     memory: 2048Mi
         ports:
-        - containerPort: 8090
+        # - containerPort: 8090
+        - containerPort: 8080
 
         volumeMounts:
         #- name: shared-wars

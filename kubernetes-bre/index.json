@@ -2,7 +2,7 @@
   "title": "bre on kubernetes",
   "description": "deliver bre to kubernetes",
   "difficulty": "beginner",
-  "time": "3 minutes",
+  "time": "5 minutes",
   "details": {
     "steps": [
       {
