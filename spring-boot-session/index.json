@@ -18,16 +18,18 @@
     ],
     "intro": {
       "text": "intro.md",
-      "courseData": "courseData.sh"
+      "courseData": "courseData.sh",
+      "code": "env-init.sh"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/code",
   },
   "backend": {
-    "imageid": "java8"
+    "imageid": "openshift-middleware-3-7"
   }
 }
