@@ -18,7 +18,6 @@
     ],
     "intro": {
       "text": "intro.md",
-      "courseData": "courseData.sh",
       "code": "env-init.sh"
     },
     "finish": {
@@ -27,7 +26,7 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uieditorpath": "/root/code",
+    "uieditorpath": "/root/code"
   },
   "backend": {
     "imageid": "openshift-middleware-3-7"
