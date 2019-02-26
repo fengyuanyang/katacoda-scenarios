@@ -5,7 +5,7 @@ Enter redis container via **command** below
 `docker run -it --link some-redis:redis --rm redis redis-cli -h redis -p 6379`{{execute}}
 
 Run spring redis via **command** below
-`./gradlew :spring-session-sample-javaconfig-redis:tomcatRun`{{execute}}
+`./gradlew :spring-session-sample-boot-redis:bootRun`{{execute}}
 
 
 Visit website via web below
