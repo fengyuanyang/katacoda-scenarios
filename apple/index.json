@@ -1,6 +1,6 @@
 {
-  "title": "hello",
-  "description": "hello",
+  "title": "banana",
+  "description": "banana",
   "details": {
     "steps": [
       {
@@ -24,7 +24,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "docker"
