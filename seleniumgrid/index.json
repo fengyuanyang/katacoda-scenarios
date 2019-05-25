@@ -1,4 +1,5 @@
 {
+  "noindex":true,
   "title": "record on selenium node",
   "description": "A example of how to record on vidwo on selenium node",
   "details": {
@@ -15,18 +16,14 @@
         "title": "Step 3",
         "text": "step3.md"
       }
-    ],
-    "intro": {
-      "text": "intro.md"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
+    ]
   },
   "environment": {
+    "hideintro": true,
+    "hidefinish": true,
     "uilayout": "terminal-terminal"
   },
   "backend": {
-    "imageid": "docker-swarm"
+    "imageid": "docker"
   }
 }
