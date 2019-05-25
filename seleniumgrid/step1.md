@@ -1,5 +1,5 @@
-## About download video Project Used here
-Project we are going to use refer to [selenium-video-node](https://github.com/aimmac23/selenium-video-node)
+## About download video Project
+Project refer to [selenium-video-node](https://github.com/aimmac23/selenium-video-node)
 
 This Jar provides serveral servlets and Proxy
 1. VideoRecordingControlServlet - used in Node
@@ -28,4 +28,4 @@ Image will be pulled from docker registry.
 Image used here 
 ### selenium/node-chrome-debug
 
-`docker selenium/node-chrome-debug`{{execute HOST1}}
+`docker pull selenium/node-chrome-debug`{{execute HOST1}}
