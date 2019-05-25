@@ -1,7 +1,7 @@
 ## Start a Selenium Grid Hub
 
 Hub can be run and listen at port 4444 by command below
-`docker run -p 4444:4444 -it selenium/node-chrome-debug bash`{{execute HOST1}}
+`docker run -v /root:/ -p 4444:4444 -it fengyuanyang/node-chrome-debug-video bash`{{execute HOST1}}
 
 Hub can be run and listen at port 4444 by command below
 `java -cp selenium-video-node-2.8.jar:selenium-server-standalone-3.9.1.jar:selenium-remote-driver-3.9.1.jar:httpcore-4.4.11.jar:httpclient-4.5.8.jar:commons-io-2.6.jar org.openqa.grid.selenium.GridLauncherV3 -servlets com.aimmac23.hub.servlet.HubVideoDownloadServlet -role hub`{{execute HOST1}}

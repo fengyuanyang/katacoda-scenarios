@@ -28,4 +28,4 @@ Image will be pulled from docker registry.
 Image used here 
 ### selenium/node-chrome-debug
 
-`docker pull selenium/node-chrome-debug`{{execute HOST1}}
+`docker pull fengyuanyang/node-chrome-debug-video`{{execute HOST1}}
