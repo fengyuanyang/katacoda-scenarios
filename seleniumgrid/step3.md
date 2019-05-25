@@ -8,7 +8,7 @@ With command
 VPN will start and Ndoe will listen at port 5555
 
 Map port Host port 5555 to Container port 5555 by executing command below
-`docker run -p 5555:5555  -n node -d fengyuanyang/node-chrome-debug-video`{{execute HOST2}}
+`docker run -p 5555:5555 --name node -d fengyuanyang/node-chrome-debug-video`{{execute HOST2}}
 
 Since node has been started by script [entry_point.sh], we need to stop it and rerun it with specific parameters
 * -servlets

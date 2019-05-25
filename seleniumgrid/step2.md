@@ -7,6 +7,8 @@ Hub can be run and listen at port 4444 by command below
 `java -cp selenium-video-node-2.8.jar:selenium-server-standalone-3.9.1.jar:selenium-remote-driver-3.9.1.jar:httpcore-4.4.11.jar:httpclient-4.5.8.jar:commons-io-2.6.jar org.openqa.grid.selenium.GridLauncherV3 -servlets com.aimmac23.hub.servlet.HubVideoDownloadServlet -role hub`{{execute HOST1}}
 
 
+`docker run -p 4444:4444 -d fengyuanyang/node-chrome-debug-video java -cp selenium-video-node-2.8.jar:selenium-server-standalone-3.9.1.jar:selenium-remote-driver-3.9.1.jar:httpcore-4.4.11.jar:httpclient-4.5.8.jar:commons-io-2.6.jar org.openqa.grid.selenium.GridLauncherV3 -servlets com.aimmac23.hub.servlet.HubVideoDownloadServlet -role hub`{{execute HOST1}}
+
 Grid console can be visited by url below
 `http://「ip」:4444/grid/console`
 

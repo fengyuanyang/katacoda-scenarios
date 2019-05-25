@@ -21,9 +21,9 @@
   "environment": {
     "hideintro": true,
     "hidefinish": true,
-    "uilayout": "terminal-terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "docker-swarm"
+    "imageid": "docker"
   }
 }
