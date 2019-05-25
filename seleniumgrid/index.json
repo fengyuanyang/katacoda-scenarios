@@ -22,6 +22,36 @@
     "finish": {
       "text": "finish.md"
     }
+    ,
+    "assets": {
+      "host01": [
+        {
+          "file": "selenium-video-node-2.8.jar",
+          "target": "/home/scrapbook/tutorial"
+        },
+        {
+          "file": "selenium-server-standalone-3.9.1.jar",
+          "target": "/home/scrapbook/tutorial"
+        },
+        {
+          "file": "selenium-remote-driver-3.9.1.jar",
+          "target": "/home/scrapbook/tutorial"
+        },
+        {
+          "file": "httpcore-4.4.11.jar",
+          "target": "/home/scrapbook/tutorial"
+        },
+        {
+          "file": "httpclient-4.5.8.jar",
+          "target": "/home/scrapbook/tutorial"
+        },
+        {
+          "file": "commons-io-2.6.jar",
+          "target": "/home/scrapbook/tutorial"
+        }
+      ]
+    }
+
   },
   "environment": {
     "uilayout": "terminal-terminal"
