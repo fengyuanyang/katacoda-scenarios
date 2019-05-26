@@ -23,4 +23,4 @@ Remember to copy your SessionId, your video can be fetched with that sessionID v
 `https://[[HOST_SUBDOMAIN]]-4444-[[KATACODA_HOST]].environments.katacoda.com/grid/admin/HubVideoDownloadServlet/?sessionId=[sessionId]`
 
 Note:
-video will be saved in Hub/Node container **tmp** folder by default
+video will be saved in **tmp** folder by default both in hub/node container

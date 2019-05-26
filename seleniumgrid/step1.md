@@ -1,4 +1,6 @@
-## About vidwo node Project
+## Get Image from Registry
+
+About **vidwo node Project**
 Project refer to [selenium-video-node](https://github.com/aimmac23/selenium-video-node)
 
 This Jar(selenium-video-node) provides serveral servlets and Proxy
@@ -9,13 +11,13 @@ This Jar(selenium-video-node) provides serveral servlets and Proxy
 	* Download Video
 
 2. HubVideoDownloadServlet - used in Hub
-	* Download video with key "sessionId"(from webremotedriver.getSissionId())
-	`http://「ip」:4444/grid/admin/HubVideoDownloadServlet/?sessionId=(sessionId)`
+	* Download video with key "webremotedriver sessionId"
+	`http://「ip」:4444/grid/admin/HubVideoDownloadServlet/?sessionId=[sessionId]`
 
 3. VideoProxy - used in Hub
-	* constructor - send Reset Recording Request to Node
-	* beforeSession - send Start Recording request to Node
-	* afterSession - send Stop Recording request to Node and download video from Node with specific session key
+	* constructor - send Reset Recording Request
+	* beforeSession - send Start Recording Request
+	* afterSession - send Stop Recording request and download video from Node with specific sessionId key
 
 Parameter [video.path] can be used to set downloaded video path
 
