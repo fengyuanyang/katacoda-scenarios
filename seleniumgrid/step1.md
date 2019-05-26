@@ -1,7 +1,7 @@
-## About download video Project
+## About vidwo node Project
 Project refer to [selenium-video-node](https://github.com/aimmac23/selenium-video-node)
 
-This Jar provides serveral servlets and Proxy
+This Jar(selenium-video-node) provides serveral servlets and Proxy
 1. VideoRecordingControlServlet - used in Node
 	* Start Recording
 	* Stop Recording
@@ -10,7 +10,7 @@ This Jar provides serveral servlets and Proxy
 
 2. HubVideoDownloadServlet - used in Hub
 	* Download video with key "sessionId"(from webremotedriver.getSissionId())
-	`http://「ip」:4444/grid/admin/HubVideoDownloadServlet/?sessionId=009526a9e2f5ead1d9f997c98d2e59a2`
+	`http://「ip」:4444/grid/admin/HubVideoDownloadServlet/?sessionId=(sessionId)`
 
 3. VideoProxy - used in Hub
 	* constructor - send Reset Recording Request to Node
@@ -22,11 +22,5 @@ Parameter [video.path] can be used to set downloaded video path
 usage
 `-Dvideo.path=<directory>`
 
-## Pull Image from Docker Registry 
-  
-Image will be pulled from docker registry.
-
-Image used here 
-### selenium/node-chrome-debug
-
+### Pull Image - selenium/node-chrome-debug - from Docker Registry 
 `docker pull fengyuanyang/node-chrome-debug-video`{{execute HOST1}}

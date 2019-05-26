@@ -10,3 +10,6 @@ List Selenium hub ip address by container name - for node to connect to
 
 Start selenium node by executing command below
 `docker exec -d node java -cp selenium-video-node-2.8.jar:selenium-server-standalone-3.9.1.jar:selenium-remote-driver-3.9.1.jar:httpcore-4.4.11.jar:httpclient-4.5.8.jar:commons-io-2.6.jar org.openqa.grid.selenium.GridLauncherV3 -servlets com.aimmac23.node.servlet.VideoRecordingControlServlet -proxy com.aimmac23.hub.proxy.VideoProxy -role node -browser "browserName=chrome" -hub http://172.18.0.2:4444/grid/register`{{execute HOST1}}
+
+Check Grid Console again, Chrome browser should be there
+[Grid status](https://[[HOST_SUBDOMAIN]]-4444-[[KATACODA_HOST]].environments.katacoda.com/grid/console)
