@@ -18,6 +18,7 @@ This Jar provides serveral servlets and Proxy
 	* afterSession - send Stop Recording request to Node and download video from Node with specific session key
 
 Parameter [video.path] can be used to set downloaded video path
+
 usage
 `-Dvideo.path=<directory>`
 
