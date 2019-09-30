@@ -1,0 +1,65 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: bre
+  labels:
+    app: bre
+    version: 1.0.0
+    release: bre
+spec:
+  selector:
+    matchLabels:
+      app: bre
+      version: 1.0.0
+      release: bre
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: bre
+        version: 1.0.0
+        release: bre
+    spec:
+      containers:
+      - name: pj-bre
+        image: bre
+        imagePullPolicy: Never
+        command: ["bash"]
+        args: ["/prepare/startwithwars.sh"]
+        # resources:
+        #   limits:
+        #     memory: 3072Mi
+        #   requests:
+        #     memory: 2048Mi
+        ports:
+        # - containerPort: 8090
+        - containerPort: 8080
+
+        volumeMounts:
+        #- name: shared-wars
+        #  mountPath: /wars
+        - name: bre-prepare
+          mountPath: /prepare
+        #- name: shared-work
+        #  mountPath: /BRE/axn/work
+        #- name: shared-config
+        #  mountPath: /BRE/axn/work/config
+ 
+      # Volumes
+      volumes:
+      - name: bre-prepare
+        hostPath:
+          path: /root/
+          type: Directory
+      #- name: shared-wars
+      #  hostPath:
+      #    path: $(PATH of wars)
+      #    type: Directory
+      #- name: shared-work
+      #  hostPath:
+      #    path: $(PATH of work)
+      #    type: Directory
+      #- name: shared-config
+      #  hostPath:
+      #    path: $(PATH of config)
+      #    type: Directory
