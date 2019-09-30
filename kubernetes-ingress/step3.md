@@ -1,22 +1,35 @@
-## Deploy Service and Ingress
-### In order to access deployment nginx, we need to create a service
-#### Execute command below to create service
+#### In order to access deployment nginx, we need to create a service
+
+Execute command below to create service
 `kubectl create -f service.yml`{{execute}}
+
+#### Check Service
+`kubectl get svc`{{execute}}
+
+A service named nginx should be listed as below
+`
+NAME                                          TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE
+ingress-nginx-nginx-ingress-controller        LoadBalancer   10.97.19.124     172.17.0.27   80:31467/TCP,443:31380/TCP   4m44s
+ingress-nginx-nginx-ingress-default-backend   ClusterIP      10.111.247.66    <none>        80/TCP                  4m44s
+kubernetes                                    ClusterIP      10.96.0.1        <none>        443/TCP                  8m28s
+nginx                                         NodePort       10.102.194.141   <none>        80:32462/TCP                 19s
+`
 
 ## Access deployment nginx
 For the sake to access deployment nginx via port 80, create a ingress with specific path **test**
 then, it's able to access nginx via url pattern such as 
 http://xxxxx/test/
 
-#### Execute command below to create Ingress
+#### Create Ingress via command
 `kubectl create -f ingress.yml`{{execute}}
 
-#### Check pods status
-`kubectl get pods`{{execute}}
+
+#### Check Ingress
+`kubectl get ingress`{{execute}}
 
 `
-NAME                   READY     STATUS    RESTARTS   AGE
-bre-687989f5bc-5btrt   1/1       Running   0          2m
+NAME           HOSTS   ADDRESS   PORTS   AGE
+test-ingress   *                 80      53s
 `
 
 #### Access Application after deploying Ingress
