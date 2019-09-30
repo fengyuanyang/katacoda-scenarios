@@ -27,19 +27,11 @@
     "assets": {
       "host01": [
         {
-          "file": "Dockerfile",
-          "target": "/root"
-        },
-        {
-          "file": "deployment.yml",
+          "file": "ingress.yml",
           "target": "/root"
         },
         {
           "file": "service.yml",
-          "target": "/root"
-        },
-        {
-          "file": "startwithwars.sh",
           "target": "/root"
         },
         {

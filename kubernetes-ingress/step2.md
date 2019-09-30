@@ -2,6 +2,9 @@
 #### Execute command below to create Service
 `kubectl create -f service.yml`{{execute}}
 
+#### Execute command below to create ingress
+`kubectl create -f ingress.yml`{{execute}}
+
 #### Check deployments status
 `kubectl get deployments`{{execute}}
 
@@ -27,4 +30,5 @@ kubernetes   ClusterIP   10.96.0.1      <none>        443/TCP          7m
 [Access Application](https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/)
 
 
-
+#### Access Application after deploying Service
+[Access Application](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/testpath/)

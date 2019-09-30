@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bre
+  name: nginx
   labels:
-    app: bre
+    app: nginx
     version: 1.0.0
-    release: bre
+    release: nginx
 spec:
   type: NodePort
   ports:
