@@ -1,0 +1,17 @@
+{
+    "title": "Kubernetes",
+    "description": "Kubernetes Samples",
+    "icon": "fa-katacoda",
+    "courses": [
+      {
+        "course_id": "kubernetes-bre",
+        "title": "bre on kubernetes",
+        "description": "deliver bre to kubernetes"
+      },
+      {
+        "course_id": "kubernetes-ingress",
+        "title": "Ingress on kubernetes",
+        "description": "enable ingress on kubernetes"
+      }
+    ]
+}
