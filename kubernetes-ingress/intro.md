@@ -1,7 +1,9 @@
-Welcome to Kubernetes Scenario!
-Here we will learn how to deploy apps on kubernetes
-includes
-1. build images from Dockerfile
-2. deploy Application with deployment.yml
-3. deploy service with service.yml
-4. deploy dashboard
+
+[What is Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress)
+
+Ingress exposes HTTP and HTTPS routes from outside the cluster to services within the cluster. 
+
+Includes
+1. Deploy ingress-nginx
+2. Deploy our deployments - nginx
+3. Deploy Service and Ingress

@@ -8,7 +8,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /testpath
+      - path: /test
         backend:
           serviceName: nginx
           servicePort: 80

@@ -6,15 +6,15 @@
   "details": {
     "steps": [
       {
-        "title": "Build image 'bre'",
+        "title": "Deploy ingress-nginx",
         "text": "step1.md"
       },
       {
-        "title": "Deploy Deployment and Service",
+        "title": "Deploy our deployments - nginx",
         "text": "step2.md"
       },
       {
-        "title": "Deploy Dashboard",
+        "title": "Deploy Service and Ingress",
         "text": "step3.md"
       }
     ],
@@ -32,10 +32,6 @@
         },
         {
           "file": "service.yml",
-          "target": "/root"
-        },
-        {
-          "file": "kubernetes-dashboard.yaml",
           "target": "/root"
         }
       ]

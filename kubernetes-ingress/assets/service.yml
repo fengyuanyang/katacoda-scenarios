@@ -4,15 +4,10 @@ metadata:
   name: nginx
   labels:
     app: nginx
-    version: 1.0.0
-    release: nginx
 spec:
   type: NodePort
   ports:
-    # - port: 8090
     - port: 80
-      nodePort: 30001
-      # targetPort: 8090
       targetPort: 80
   selector:
     run: nginx

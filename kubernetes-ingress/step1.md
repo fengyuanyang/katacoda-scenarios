@@ -1,20 +1,17 @@
-## Build Image from Dockerfile
+## Prerequisites
+In order to deploy Ingress
+**Ingress controller** is necessary
 
-Image will be pulled from docker registry.
+We might need to deploy an Ingress controller such as **ingress-nginx**
 
-For more information about the parent image
+For more information about **ingress-nginx**
 
-refer [jdk6-mvn3](https://hub.docker.com/r/fengyuanyang/jdk6-mvn3/dockerfile)
+refer to [helm:ingress-nginx](https://github.com/kubernetes/ingress-nginx/blob/master/docs/deploy/index.md#using-helm)
 
-This image includes
-1. JDK 1.6
-2. MAVEN 3.2.5
-3. TOMCAT 7
+---
+## Deploy ingress-nginx
+Create deployment ingress-nginx with helm via **command** below
+`helm install stable/nginx-ingress --name ingress-nginx`{{execute}}
 
-Build docker image via **command** below
-
-`kubectl run nginx --image=nginx`{{execute}}
-
-After building successfully, check if image **bre** has been created
-
-`docker images`{{execute}}
+Check ingress-nginx status
+`helm ls`{{execute}}
