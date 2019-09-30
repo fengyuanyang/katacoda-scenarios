@@ -8,11 +8,9 @@ Execute command below to create service
 
 A service named nginx should be listed as below
 `
-NAME                                          TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE
-ingress-nginx-nginx-ingress-controller        LoadBalancer   10.97.19.124     172.17.0.27   80:31467/TCP,443:31380/TCP   4m44s
-ingress-nginx-nginx-ingress-default-backend   ClusterIP      10.111.247.66    <none>        80/TCP                  4m44s
-kubernetes                                    ClusterIP      10.96.0.1        <none>        443/TCP                  8m28s
-nginx                                         NodePort       10.102.194.141   <none>        80:32462/TCP                 19s
+NAME       TYPE           CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE
+...
+nginx      NodePort       10.102.194.141   <none>        80:32462/TCP                 19s
 `
 
 ## Access deployment nginx
