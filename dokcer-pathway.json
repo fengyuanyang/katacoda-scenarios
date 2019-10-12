@@ -1,0 +1,17 @@
+{
+    "title": "Docker",
+    "description": "Docker Samples",
+    "icon": "fa-katacoda",
+    "courses": [
+      {
+        "course_id": "dockerbre",
+        "title": "create bre",
+        "description": "create bre container and run tomcat"
+      },
+      {
+        "course_id": "docker-basic-commands",
+        "title": "Create first container-nbinx",
+        "description": "familiar with create container from image and check status"
+      }
+    ]
+}
