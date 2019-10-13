@@ -1,6 +1,7 @@
 In previous step, we have got the image name we would like to use.
 `nginx`
 
+### docker pull
 In order to run images, need to pull it first via command 
 `docker pull nginx`{{execute}}
 

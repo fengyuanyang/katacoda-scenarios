@@ -20,6 +20,10 @@
       {
         "title": "Run your nginx",
         "text": "step4.md"
+      },
+      {
+        "title": "Delete image and container",
+        "text": "step5.md"
       }
     ],
     "intro": {

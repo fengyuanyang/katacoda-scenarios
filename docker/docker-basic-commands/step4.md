@@ -1,4 +1,5 @@
 It's time to run our first app-nginx
+### docker run
 execute *docker run* 
 
 |Name          | shorthand |Description                          |
@@ -7,11 +8,16 @@ execute *docker run*
 |--interactive | -i		   |Keep STDIN open even if not attached |
 |--tty         | -t		   |Allocate a pseudo-TTY                |
 |--rm          |   		   |Automatically remove the container when it exits|
+|--publish     | -p        |Publish a container’s port(s) to the host|
 
 
-With parameter `name`, we can delete it much easier
-`docker run --name nginx nginx`{{execute}}
+With parameter 
 
+`name` - we can delete it much easier later
+`p` - we can access nginx via port 80 
+`docker run -p 80:80 --name nginx nginx`{{execute}}
+
+### docker ps
 Check what containers are running for now
 *docker ps*
 
@@ -22,14 +28,7 @@ Check what containers are running for now
 `docker ps`{{execute}}
 
 
-
-## Run container and enter
-`docker run -p 8080:8080 -it bre bash`{{execute}}
-
-## Run tomcat on port 8080
-`bash /opt/tomcat/bin/startup.sh`{{execute}}
-
 ## Reach tomcat from browser
-https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
 
