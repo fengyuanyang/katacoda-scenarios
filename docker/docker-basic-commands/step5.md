@@ -1,12 +1,12 @@
-We have accessed to our nginx app, time to delete it
+We have accessed our nginx app successfully, time to delete it
 ### docker rm
-execute *docker rm* 
+Remove one or more containers
 
 |Name          | shorthand |Description                          |
 |--------------|-----------|-------------------------------------|
 |--force       | -f        |Force the removal of a running container (uses SIGKILL)|
 
-Since our container is still running, we need to stop it before deleting it
+Since our container is still running, we need to stop it before removing it
 
 First, stop container
 `docker stop nginx`{{execute}}
@@ -22,7 +22,8 @@ Now, check container status again
 
 Container with name `nginx` has been removed.
 
-### docker rm
-Remove our image `nginx`
+### docker rmi
+Remove one or more images
+
 If we don't need the image any more, we could delete it
 `docker rmi nginx`{{execute}}

@@ -10,9 +10,11 @@ Check what images we have for now
 |nginx     | latest|f949e7d76d63 | 2 weeks ago | 126MB |
 
 ### docker history
-*docker history*: Show the history of an image
+Show the history of an image
+
 `docker history nginx`{{execute}}
 
 ### docker inspect
-*docker inspect*: Return low-level information on Docker objects
+Return low-level information on Docker objects
+
 `docker inspect nginx`{{execute}}

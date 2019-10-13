@@ -23,7 +23,6 @@ execute *docker run* with parameter
 
 ### docker ps
 Check what containers are running for now
-*docker ps*
 
 |Name          | shorthand |Description                          |
 |--------------|-----------|-------------------------------------|
@@ -33,7 +32,6 @@ Check what containers are running for now
 
 ### docker exec
 Run a command in a running container
-*docker exec*
 
 |Name          | shorthand |Description                          |
 |--------------|-----------|-------------------------------------|
@@ -49,7 +47,7 @@ execute *docker exec* with parameter
 
 Now, we can execute any command inside the container.
 Such as, take a look on nginx properties
-`cat /etc/nginx/conf`{{execute}}
+`cat /etc/nginx/nginx.conf`{{execute}}
 
 
 ## Reach negix from browser
