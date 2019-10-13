@@ -15,7 +15,8 @@ Result should be like it
 |-------|--------------------------|-------|-----------|-----------|
 | nginx | Official build of Nginx. | 12049 | [OK]      |           |
 
-Note that 
-If the name of the images not starts from XXX/, then it's a offical one.
+#### Note
+If the name of the images not starts with XXX/, then it's a offical one.
 Others images uploaded by users ALWAYS start with user name.
+
 Such as `fengyuanyang/node-chrome-debug-video-start`

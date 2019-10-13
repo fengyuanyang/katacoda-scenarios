@@ -12,6 +12,10 @@
       {
         "title": "Pull image",
         "text": "step2.md"
+      },
+      {
+        "title": "Run container from image",
+        "text": "step3.md"
       }
     ],
     "intro": {
@@ -22,7 +26,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "docker"
