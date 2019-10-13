@@ -1,6 +1,8 @@
 ### docker images
 Now, we have downloaded the image we need.
+
 Check what images we have for now 
+
 `docker images`{{execute}}
 
 |REPOSITORY| TAG   |IMAGE ID     |CREATED      | SIZE  |

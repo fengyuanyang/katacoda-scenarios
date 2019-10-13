@@ -5,8 +5,7 @@ There are two ways to search for images results.
 1. Go to website [https://hub.docker.com/](https://hub.docker.com/)
 and search for images then
 
-2. Images can be easily searched from docker registry by command below
-`docker search nginx`{{execute}}
+2. Run `docker search nginx`{{execute}}
 
 
 Result should be like it
@@ -17,6 +16,6 @@ Result should be like it
 
 #### Note
 If the name of the images not starts with XXX/, then it's a offical one.
-Others images uploaded by users ALWAYS start with user name.
+Other images uploaded by users ALWAYS start with user name.
 
 Such as `fengyuanyang/node-chrome-debug-video-start`
