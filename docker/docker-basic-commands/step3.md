@@ -1,5 +1,5 @@
 ### docker images
-Now, we have downloaded the image we need.
+Now, we have downloaded the image we need **nginx**.
 
 Check what images we have for now 
 

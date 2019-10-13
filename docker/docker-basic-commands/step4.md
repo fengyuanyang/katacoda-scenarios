@@ -13,11 +13,11 @@ It's time to run our first app-nginx
 
 execute *docker run* with parameter 
 
-`name` - we can delete it much easier later
+**name** - we can delete it much easier later
 
-`p` - we can access nginx via port 80 
+**p** - we can access nginx via port 80 
 
-`it` - keep STDIN open and allocate a TTY
+**d** - Run container in background
 
 `docker run -d -p 80:80 --name nginx nginx`{{execute}}
 
@@ -41,12 +41,13 @@ Run a command in a running container
 
 execute *docker exec* with parameter 
 
-`it` - in a detach mode
+**it** - in a detach mode
 
 `docker exec -it nginx bash`{{execute}}
 
 Now, we can execute any command inside the container.
-Such as, take a look on nginx properties
+Such as, take a look on nginx propertie file
+
 `cat /etc/nginx/nginx.conf`{{execute}}
 
 

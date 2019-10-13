@@ -13,6 +13,7 @@ and search for images then
 
 #### Note
 If the name of the images **NOT** starts with `{username}/`, then it's a offical one.
-Images uploaded by users ALWAYS start with user name.
 
-Such as `fengyuanyang/node-chrome-debug-video-start`
+Images uploaded by users **ALWAYS** start with user name.
+
+Such as **fengyuanyang/node-chrome-debug-video-start**
