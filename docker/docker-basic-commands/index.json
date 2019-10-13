@@ -14,8 +14,12 @@
         "text": "step2.md"
       },
       {
-        "title": "Run container from image",
+        "title": "Checi image information",
         "text": "step3.md"
+      },
+      {
+        "title": "Run your nginx",
+        "text": "step4.md"
       }
     ],
     "intro": {
