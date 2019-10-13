@@ -10,6 +10,7 @@ Since our container is still running, we need to stop it before deleting it
 
 First, stop container
 `docker stop nginx`{{execute}}
+
 Second, delete container
 `docker rm nginx`{{execute}}
 

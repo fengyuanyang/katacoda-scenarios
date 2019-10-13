@@ -15,7 +15,8 @@ With parameter
 
 `name` - we can delete it much easier later
 `p` - we can access nginx via port 80 
-`docker run -p 80:80 --name nginx nginx`{{execute}}
+`it` - keep STDIN open and allocate a TTY
+`docker run -it -p 80:80 --name nginx nginx`{{execute}}
 
 ### docker ps
 Check what containers are running for now
