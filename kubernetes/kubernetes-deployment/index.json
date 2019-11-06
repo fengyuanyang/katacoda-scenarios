@@ -1,6 +1,6 @@
 {
-  "title": "bre on kubernetes",
-  "description": "deliver bre to kubernetes",
+  "title": "Say hello to kubernetes",
+  "description": "deploy deployment with manifest files",
   "difficulty": "beginner",
   "time": "5 minutes",
   "details": {
