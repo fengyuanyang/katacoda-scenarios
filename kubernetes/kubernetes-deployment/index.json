@@ -23,12 +23,28 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "deployment.yml",
+          "target": "/root"
+        },
+        {
+          "file": "service.yml",
+          "target": "/root"
+        },
+        {
+          "file": "kubernetes-dashboard.yaml",
+          "target": "/root"
+        }
+      ]
     }
   },
   "environment": {
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": " kubernetes-cluster"
+    "imageid": "kubernetes-cluster"
   }
 }
