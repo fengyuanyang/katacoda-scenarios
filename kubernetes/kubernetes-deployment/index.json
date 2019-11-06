@@ -7,11 +7,11 @@
     "steps": [
       {
         "title": "Build image 'bre'",
-        "text": "step1.md"
+        "text": "step2.md"
       },
       {
         "title": "Deploy Deployment and Service",
-        "text": "step2.md"
+        "text": "step1.md"
       },
       {
         "title": "Deploy Dashboard",
