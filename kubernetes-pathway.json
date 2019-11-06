@@ -12,6 +12,11 @@
         "course_id": "kubernetes-ingress",
         "title": "Ingress on kubernetes",
         "description": "enable ingress on kubernetes"
+      },
+      {
+        "course_id": "kubernetes-deployment",
+        "title": "first deployment - hello world",
+        "description": "deploy deployment with manifest files"
       }
     ]
 }

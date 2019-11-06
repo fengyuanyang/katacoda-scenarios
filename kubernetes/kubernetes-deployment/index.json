@@ -1,0 +1,50 @@
+{
+  "title": "bre on kubernetes",
+  "description": "deliver bre to kubernetes",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Build image 'bre'",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deploy Deployment and Service",
+        "text": "step2.md"
+      },
+      {
+        "title": "Deploy Dashboard",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "deployment.yml",
+          "target": "/root"
+        },
+        {
+          "file": "service.yml",
+          "target": "/root"
+        },
+        {
+          "file": "kubernetes-dashboard.yaml",
+          "target": "/root"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": " kubernetes-cluster"
+  }
+}
