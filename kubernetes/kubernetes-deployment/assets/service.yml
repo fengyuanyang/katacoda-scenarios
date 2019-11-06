@@ -1,15 +1,14 @@
 apiVersion: v1
-    kind: Service
-    metadata:
-      name: demo
-      labels:
-        app: demo
-    spec:
-      ports:
-      - port: 9999
-        protocol: TCP
-        targetPort: 8888
-        nodePort: 30000
-      selector:
-        app: demo
-      type: ClusterIP
+kind: Service
+metadata:
+  name: demo
+  labels:
+    app: demo
+spec:
+  ports:
+  - port: 9999
+    protocol: TCP
+    targetPort: 8888
+  selector:
+    app: demo
+  type: ClusterIP

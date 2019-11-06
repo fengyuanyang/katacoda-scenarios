@@ -35,7 +35,7 @@ selector `app: bre` is used in Service, which select pods with labels match `app
 #### Execute command below to create Service
 `kubectl apply -f service.yml`{{execute}}
 
-
+[Access Dashboard](https://[[HOST_SUBDOMAIN]]-8001-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/default/services/demo:9999/proxy/)
 
 #### Check pods status
 `kubectl get pods`{{execute}}
