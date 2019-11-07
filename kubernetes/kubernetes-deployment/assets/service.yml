@@ -9,6 +9,7 @@ spec:
   - port: 9999
     protocol: TCP
     targetPort: 8888
+    nodePort: 30000
   selector:
     app: demo
-  type: ClusterIP
+  type: NodePort
