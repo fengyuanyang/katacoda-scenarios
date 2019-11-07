@@ -12,6 +12,10 @@
       {
         "title": "Deploy Deployment and Service",
         "text": "step2.md"
+      },
+      {
+        "title": "Delete Deployment and Service",
+        "text": "step3.md"
       }
     ],
     "intro": {

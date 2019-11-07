@@ -1,38 +1,37 @@
 
-#### Deploy Application to kubernetes
+Deploy Application to kubernetes
 `kubectl apply -f deployment.yml`{{execute}}
 
 
-#### Check deployments status
+Check deployments status
 `kubectl get deployments`{{execute}}
 `
-NAME      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
-demo      1         1         1            1           5m
+NAME   READY   UP-TO-DATE   AVAILABLE   AGE
+demo   1/1     1            1           42s
 `
 
-#### Execute command below to create Service
+Execute command below to create Service
 `kubectl apply -f service.yml`{{execute}}
 
 
-#### Check pods status
+Check pods status
 `kubectl get pods`{{execute}}
 
 `
 NAME                   READY     STATUS    RESTARTS   AGE
-bre-687989f5bc-5btrt   1/1       Running   0          2m
+demo-7d57479745-2c7gp   1/1     Running   0          66s
 `
 
 Repeat if the STATUS not shows `Running`
 
-#### Check services status
+Check services status
 `kubectl get svc`{{execute}}
 `
 NAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
-demo         NodePort    10.98.14.144   <none>        8090:30001/TCP   6m
-kubernetes   ClusterIP   10.96.0.1      <none>        443/TCP          7m
+demo         NodePort    10.101.43.190  <none>        9999:30000/TCP   22s
 `
 
-#### Access Application after deploying Service
+Access Application after deploying Service
 [Access Application](https://[[HOST_SUBDOMAIN]]-30000-[[KATACODA_HOST]].environments.katacoda.com/)
 
 
