@@ -6,7 +6,7 @@ metadata:
     app: demo
 spec:
   ports:
-  - port: 9999
+  - port: 1111
     protocol: TCP
     targetPort: 8888
     nodePort: 30000
