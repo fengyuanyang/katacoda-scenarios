@@ -1,26 +1,21 @@
-## Build Image from Dockerfile
+`kubectl apply -f kubernetes-dashboard.yaml`{{execute}}
 
-Image will be pulled from docker registry.
 
-For more information about the parent image
+#### Access Dashboard after deploying Dashboard 
+[Access Dashboard](https://[[HOST_SUBDOMAIN]]-8001-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default)
 
-refer [jdk6-mvn3](https://hub.docker.com/r/fengyuanyang/jdk6-mvn3/dockerfile)
 
-This image includes
-1. JDK 1.6
-2. MAVEN 3.2.5
-3. TOMCAT 7
+#### Check deployments status
+`kubectl get deployments -n kube-system`{{execute}}
+`
+NAME      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+bre       1         1         1            1           5m
+`
 
-Build docker image via **command** below
-
-`docker build -t bre .`{{execute}}
-
-After building successfully, check if image **bre** has been created
-
-`docker images`{{execute}}
-
-Result should be like it
-
-| REPOSITORY | IMAGE ID     | CREATED        | SIZE  |
-|------------|--------------|----------------|-------|
-| bre        | XXXXXXXXXXXX | 21 seconds ago | 823MB |
+#### Check services status
+`kubectl get svc -n kube-system`{{execute}}
+`
+NAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
+bre          NodePort    10.98.14.144   <none>        8090:30001/TCP   6m
+kubernetes   ClusterIP   10.96.0.1      <none>        443/TCP          7m
+`

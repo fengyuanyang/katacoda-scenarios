@@ -6,16 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Build image 'bre'",
-        "text": "step2.md"
-      },
-      {
-        "title": "Deploy Deployment and Service",
+        "title": "deploy dashboard",
         "text": "step1.md"
       },
       {
-        "title": "Deploy Dashboard",
-        "text": "step3.md"
+        "title": "Deploy Deployment and Service",
+        "text": "step2.md"
       }
     ],
     "intro": {
