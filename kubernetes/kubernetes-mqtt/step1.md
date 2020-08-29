@@ -9,7 +9,7 @@ create dashboard so we can monitor status
 
 Check deployments status
 
-`kubectl get deployments -n kube-system`{{execute}}
+`kubectl get deployments -n kubernetes-dashboard`{{execute}}
 `
 NAME                      DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 kubernetes-dashboard      0/1     1            0           2s
@@ -17,7 +17,7 @@ kubernetes-dashboard      0/1     1            0           2s
 
 Check services status
 
-`kubectl get svc -n kube-system`{{execute}}
+`kubectl get svc -n kubernetes-dashboard`{{execute}}
 `
 NAME                   TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE
 kubernetes-dashboard   ClusterIP   10.97.20.6   <none>        443/TCP                  44s
@@ -27,4 +27,4 @@ To access Dashboard, you must create a secure channel to your Kubernetes cluster
 
 `kubectl proxy --address='0.0.0.0' --port=8001 --accept-hosts='^*$' &`{{execute}}
 
-[Access Dashboard](https://[[HOST_SUBDOMAIN]]-8001-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default)
+[Access Dashboard](https://[[HOST_SUBDOMAIN]]-8001-[[KATACODA_HOST]].environments.katacoda.com/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/.)
