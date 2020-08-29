@@ -1,0 +1,50 @@
+{
+  "title": "Say hello to kubernetes",
+  "description": "deploy deployment with manifest files",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "deploy dashboard",
+        "text": "step1.md"
+      },
+      {
+        "title": "Deploy Mqtt with helm",
+        "text": "step2.md"
+      },
+      {
+        "title": "Delete Deployment and Service",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "deployment.yml",
+          "target": "/root"
+        },
+        {
+          "file": "service.yml",
+          "target": "/root"
+        },
+        {
+          "file": "kubernetes-dashboard.yaml",
+          "target": "/root"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
+}
