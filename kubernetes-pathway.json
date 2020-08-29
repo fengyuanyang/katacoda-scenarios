@@ -17,6 +17,11 @@
         "course_id": "kubernetes-deployment",
         "title": "first deployment - hello world",
         "description": "deploy deployment with manifest files"
+      },
+      {
+        "course_id": "kubernetes-mqtt",
+        "title": "mqtt & go(Sub + Pub)",
+        "description": "deploy mqtt and sub + pub"
       }
     ]
 }
