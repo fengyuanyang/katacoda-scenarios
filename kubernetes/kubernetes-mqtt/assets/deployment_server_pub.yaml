@@ -21,9 +21,9 @@ spec:
         release: pub
     spec:
       containers:
-      - name: mqtt-pubZ
+      - name: mqtt-pub
         image: golang:1.15.0-buster
-        imagePullPolicy: Never
+#        imagePullPolicy: Never
         command: ["go"]
         args: ["run", "/go/src/mqtt/pub_server.go"]
         # resources:
