@@ -24,8 +24,8 @@ spec:
       - name: mqtt-pub
         image: golang:1.15.0-buster
         imagePullPolicy: Always
-        command: [ "bash" ]
-        args: [ "/mqtt/pub_start.sh" ]
+        command: [ "go" ]
+        args: [ "/go/src/mqtt/pub_server.go" ]
         # resources:
         #   limits:
         #     memory: 3072Mi
@@ -35,16 +35,16 @@ spec:
         # - containerPort: 8090
         - containerPort: 8080
 
-        volumeMounts:
-        - name: mqtt
-          mountPath: /mqtt
+#        volumeMounts:
+#        - name: mqtt
+#          mountPath: /mqtt
  
       # Volumes
-      volumes:
-      - name: mqtt
-        hostPath:
-          path: /root/
-          type: Directory
+#      volumes:
+#      - name: mqtt
+#        hostPath:
+#          path: /root/
+#          type: Directory
 
 ---
 apiVersion: v1
