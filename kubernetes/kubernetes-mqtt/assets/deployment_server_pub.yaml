@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: mqtt-pub
-        image: golang:1.15.0-buster
+        image: fengyuanyang/mqttgo
         imagePullPolicy: Always
         command: [ "go" ]
         args: [ "/go/src/mqtt/pub_server.go" ]
