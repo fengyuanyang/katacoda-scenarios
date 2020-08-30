@@ -66,9 +66,7 @@ func main() {
 	choke := make(chan [2]string)
 
 	opts.SetDefaultPublishHandler(func(client MQTT.Client, msg MQTT.Message) {
-		fmt.Printf("555\n")
 		choke <- [2]string{msg.Topic(), string(msg.Payload())}
-		fmt.Printf("666\n")
 	})
 
 	client := MQTT.NewClient(opts)

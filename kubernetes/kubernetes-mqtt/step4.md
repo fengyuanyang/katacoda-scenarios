@@ -11,4 +11,4 @@ Check services status
 
 `kubectl get svc`{{execute}}
 
-[Access Dashboard](https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/mqtt?message=abc
+[Access Dashboard](https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/mqtt?message=abc)
