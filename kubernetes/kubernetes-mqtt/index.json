@@ -27,11 +27,11 @@
     "assets": {
       "host01": [
         {
-          "file": "deployment.yml",
+          "file": "deployment_server_pub.yaml",
           "target": "/root"
         },
         {
-          "file": "service.yml",
+          "file": "pub_server.go",
           "target": "/root"
         },
         {
