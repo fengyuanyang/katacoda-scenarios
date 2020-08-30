@@ -1,5 +1,4 @@
 ## You have completed this session.
-### deploy applications and service on kubernetes
 
 Congratulations!
-Now, you are able to deploy your own applications! Go ahead
+Now, you are able to deploy your own mqtt applications! Go ahead

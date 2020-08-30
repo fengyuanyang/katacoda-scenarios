@@ -14,8 +14,12 @@
         "text": "step2.md"
       },
       {
-        "title": "Delete Deployment and Service",
+        "title": "Deploy Mqtt pub application",
         "text": "step3.md"
+      },
+      {
+        "title": "Deploy Mqtt sub application",
+        "text": "step4.md"
       }
     ],
     "intro": {
