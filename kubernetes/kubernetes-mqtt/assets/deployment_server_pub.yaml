@@ -24,8 +24,8 @@ spec:
       - name: mqtt-pub
         image: golang:1.15.0-buster
 #        imagePullPolicy: Never
-        command: ["go"]
-        args: ["run", "/go/src/mqtt/pub_server.go"]
+#        command: ["go"]
+#        args: ["run", "/go/src/mqtt/pub_server.go"]
         # resources:
         #   limits:
         #     memory: 3072Mi
