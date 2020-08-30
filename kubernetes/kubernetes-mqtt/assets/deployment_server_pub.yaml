@@ -43,7 +43,7 @@ spec:
       volumes:
       - name: mqtt
         hostPath:
-          path: /root/mqtt
+          path: /root
           type: Directory
 
 ---
