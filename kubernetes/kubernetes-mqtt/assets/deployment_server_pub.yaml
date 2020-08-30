@@ -1,0 +1,65 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: pub
+  labels:
+    app: pub
+    version: 1.0.0
+    release: pub
+spec:
+  selector:
+    matchLabels:
+      app: pub
+      version: 1.0.0
+      release: pub
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: pub
+        version: 1.0.0
+        release: pub
+    spec:
+      containers:
+      - name: mqtt-pubZ
+        image: golang:1.15.0-buster
+        imagePullPolicy: Never
+        command: ["go"]
+        args: ["run", "/go/src/mqtt/pub_server.go"]
+        # resources:
+        #   limits:
+        #     memory: 3072Mi
+        #   requests:
+        #     memory: 2048Mi
+        ports:
+        # - containerPort: 8090
+        - containerPort: 8080
+
+        volumeMounts:
+        - name: mqtt
+          mountPath: /go/src/mqtt
+ 
+      # Volumes
+      volumes:
+      - name: mqtt
+        hostPath:
+          path: /root/mqtt
+          type: Directory
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pub
+  labels:
+    app: pub
+    version: 1.0.0
+    release: pub
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      nodePort: 30001
+      targetPort: 8080
+  selector:
+    app: pub
