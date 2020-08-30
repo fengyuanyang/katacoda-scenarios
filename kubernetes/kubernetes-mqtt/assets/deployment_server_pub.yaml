@@ -25,26 +25,9 @@ spec:
         image: fengyuanyang/mqttgo
         imagePullPolicy: Always
         command: [ "go" ]
-        args: [ "/go/src/mqtt/pub_server.go" ]
-        # resources:
-        #   limits:
-        #     memory: 3072Mi
-        #   requests:
-        #     memory: 2048Mi
+        args: [ "run", "/go/src/mqtt/pub_server.go" ]
         ports:
-        # - containerPort: 8090
         - containerPort: 8080
-
-#        volumeMounts:
-#        - name: mqtt
-#          mountPath: /mqtt
- 
-      # Volumes
-#      volumes:
-#      - name: mqtt
-#        hostPath:
-#          path: /root/
-#          type: Directory
 
 ---
 apiVersion: v1
