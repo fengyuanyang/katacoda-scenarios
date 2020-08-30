@@ -1,6 +1,6 @@
 {
-  "title": "Say hello to kubernetes",
-  "description": "deploy deployment with manifest files",
+  "title": "Mqtt And GO",
+  "description": "Pub and Sub with Mqtt",
   "difficulty": "beginner",
   "time": "5 minutes",
   "details": {
@@ -14,11 +14,11 @@
         "text": "step2.md"
       },
       {
-        "title": "Deploy Mqtt pub application",
+        "title": "Deploy Mqtt sub application",
         "text": "step3.md"
       },
       {
-        "title": "Deploy Mqtt sub application",
+        "title": "Deploy Mqtt pub application",
         "text": "step4.md"
       }
     ],
@@ -32,6 +32,10 @@
       "host01": [
         {
           "file": "deployment_server_pub.yaml",
+          "target": "/root"
+        },
+        {
+          "file": "deployment_sub.yaml",
           "target": "/root"
         },
         {
