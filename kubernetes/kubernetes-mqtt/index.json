@@ -35,6 +35,10 @@
           "target": "/root"
         },
         {
+          "file": "pub_start.sh",
+          "target": "/root"
+        },
+        {
           "file": "kubernetes-dashboard.yaml",
           "target": "/root"
         }
