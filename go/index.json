@@ -1,0 +1,21 @@
+{
+  "noindex":true,
+  "title": "Run first go project",
+  "description": "Hello world",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ]
+  },
+  "environment": {
+    "hideintro": true,
+    "hidefinish": true,
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "golang:1.14"
+  }
+}
