@@ -10,6 +10,9 @@
       }
     ]
   },
+  "files": [
+    "hello.go"
+  ],
   "environment": {
     "hideintro": true,
     "hidefinish": true,
