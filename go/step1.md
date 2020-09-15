@@ -7,3 +7,10 @@ func main() {
 	fmt.Println("Hello, World")
 }
 </pre>
+
+### build hello binary    
+`go build hello.go`{{execute}}
+
+### execute hello binary    
+`./hello`{{execute}}
+
