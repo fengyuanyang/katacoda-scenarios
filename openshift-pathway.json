@@ -1,0 +1,12 @@
+{
+    "title": "Openshifts",
+    "description": "Openshift Samples",
+    "icon": "fa-katacoda",
+    "courses": [
+      {
+        "course_id": "pipeline-argo",
+        "title": "CI CD on openshifts",
+        "description": "integrate techton and argo"
+      }
+    ]
+}
