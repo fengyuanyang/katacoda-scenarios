@@ -24,7 +24,7 @@
     "intro": {
       "code": "set-env.sh",
       "text": "intro.md"
-    }
+    },
     "assets": {
       "client": [
       ]
